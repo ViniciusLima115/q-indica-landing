@@ -1,0 +1,81 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#EEF3FA"/>
+  <rect x="36" y="36" width="1528" height="828" rx="24" fill="#FFFFFF" stroke="#D4DFEE"/>
+
+  <rect x="36" y="36" width="1528" height="74" rx="24" fill="#F8FBFF"/>
+  <line x1="36" y1="110" x2="1564" y2="110" stroke="#D4DFEE"/>
+
+  <rect x="74" y="58" width="172" height="30" rx="15" fill="#E2F6F0"/>
+  <circle cx="92" cy="73" r="6" fill="#0D8B73"/>
+  <text x="106" y="79" fill="#0A6F5C" font-size="13" font-family="Arial, sans-serif" font-weight="700">Q-Indica Live</text>
+
+  <rect x="1260" y="58" width="270" height="30" rx="15" fill="#EDF4FF"/>
+  <text x="1278" y="79" fill="#38527A" font-size="13" font-family="Arial, sans-serif">operacao@farmacia.com</text>
+
+  <rect x="74" y="146" width="240" height="690" rx="18" fill="#F3F7FD" stroke="#D4DFEE"/>
+  <text x="104" y="191" fill="#172B4D" font-size="18" font-family="Arial, sans-serif" font-weight="700">Atendimentos</text>
+
+  <rect x="98" y="216" width="192" height="66" rx="12" fill="#FFFFFF" stroke="#D4DFEE"/>
+  <circle cx="120" cy="249" r="6" fill="#0D8B73"/>
+  <text x="136" y="246" fill="#172B4D" font-size="13" font-family="Arial, sans-serif" font-weight="700">Dipirona 1g</text>
+  <text x="136" y="264" fill="#4B5B72" font-size="11" font-family="Arial, sans-serif">2 itens sugeridos</text>
+
+  <rect x="98" y="294" width="192" height="66" rx="12" fill="#FFFFFF" stroke="#D4DFEE"/>
+  <circle cx="120" cy="327" r="6" fill="#0D8B73"/>
+  <text x="136" y="324" fill="#172B4D" font-size="13" font-family="Arial, sans-serif" font-weight="700">Amoxicilina</text>
+  <text x="136" y="342" fill="#4B5B72" font-size="11" font-family="Arial, sans-serif">3 itens sugeridos</text>
+
+  <rect x="98" y="372" width="192" height="66" rx="12" fill="#FFFFFF" stroke="#D4DFEE"/>
+  <circle cx="120" cy="405" r="6" fill="#0D8B73"/>
+  <text x="136" y="402" fill="#172B4D" font-size="13" font-family="Arial, sans-serif" font-weight="700">Omeprazol</text>
+  <text x="136" y="420" fill="#4B5B72" font-size="11" font-family="Arial, sans-serif">2 itens sugeridos</text>
+
+  <rect x="342" y="146" width="756" height="338" rx="18" fill="#FFFFFF" stroke="#D4DFEE"/>
+  <text x="374" y="190" fill="#172B4D" font-size="18" font-family="Arial, sans-serif" font-weight="700">Ticket medio por turno</text>
+  <text x="374" y="214" fill="#4B5B72" font-size="12" font-family="Arial, sans-serif">Ultimos 30 dias</text>
+
+  <rect x="374" y="238" width="690" height="210" rx="12" fill="#F7FAFF"/>
+
+  <polyline points="390,420 470,370 550,388 630,340 710,360 790,320 870,338 950,292 1030,310"
+            stroke="#0D8B73" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="390,432 470,402 550,414 630,398 710,404 790,392 870,405 950,380 1030,390"
+            stroke="#77C8B7" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <line x1="390" y1="448" x2="1030" y2="448" stroke="#C8D5E8" stroke-dasharray="4 6"/>
+
+  <rect x="1118" y="146" width="412" height="690" rx="18" fill="#F8FBFF" stroke="#D4DFEE"/>
+  <text x="1150" y="190" fill="#172B4D" font-size="18" font-family="Arial, sans-serif" font-weight="700">Sugestoes em tempo real</text>
+
+  <rect x="1150" y="216" width="348" height="112" rx="14" fill="#FFFFFF" stroke="#D4DFEE"/>
+  <text x="1172" y="246" fill="#172B4D" font-size="14" font-family="Arial, sans-serif" font-weight="700">Vitamina C 1g</text>
+  <text x="1172" y="270" fill="#4B5B72" font-size="12" font-family="Arial, sans-serif">Apoio imunologico em sindromes gripais.</text>
+  <rect x="1172" y="286" width="126" height="24" rx="12" fill="#D5F3EC"/>
+  <text x="1188" y="302" fill="#0A6F5C" font-size="11" font-family="Arial, sans-serif" font-weight="700">+R$ 24 por venda</text>
+
+  <rect x="1150" y="344" width="348" height="112" rx="14" fill="#FFFFFF" stroke="#D4DFEE"/>
+  <text x="1172" y="374" fill="#172B4D" font-size="14" font-family="Arial, sans-serif" font-weight="700">Sais de reidratacao</text>
+  <text x="1172" y="398" fill="#4B5B72" font-size="12" font-family="Arial, sans-serif">Complemento de hidratacao oral.</text>
+  <rect x="1172" y="414" width="126" height="24" rx="12" fill="#D5F3EC"/>
+  <text x="1188" y="430" fill="#0A6F5C" font-size="11" font-family="Arial, sans-serif" font-weight="700">+R$ 18 por venda</text>
+
+  <rect x="1150" y="472" width="348" height="112" rx="14" fill="#FFFFFF" stroke="#D4DFEE"/>
+  <text x="1172" y="502" fill="#172B4D" font-size="14" font-family="Arial, sans-serif" font-weight="700">Protetor gastrico</text>
+  <text x="1172" y="526" fill="#4B5B72" font-size="12" font-family="Arial, sans-serif">Suporte para uso prolongado.</text>
+  <rect x="1172" y="542" width="126" height="24" rx="12" fill="#D5F3EC"/>
+  <text x="1188" y="558" fill="#0A6F5C" font-size="11" font-family="Arial, sans-serif" font-weight="700">+R$ 29 por venda</text>
+
+  <rect x="342" y="504" width="756" height="332" rx="18" fill="#FFFFFF" stroke="#D4DFEE"/>
+  <text x="374" y="548" fill="#172B4D" font-size="18" font-family="Arial, sans-serif" font-weight="700">Impacto mensal</text>
+
+  <rect x="374" y="572" width="220" height="232" rx="14" fill="#F4FAF8"/>
+  <text x="398" y="610" fill="#0A6F5C" font-size="13" font-family="Arial, sans-serif" font-weight="700">Ticket medio</text>
+  <text x="398" y="654" fill="#172B4D" font-size="36" font-family="Arial, sans-serif" font-weight="700">+18%</text>
+
+  <rect x="610" y="572" width="220" height="232" rx="14" fill="#F4F8FF"/>
+  <text x="634" y="610" fill="#38527A" font-size="13" font-family="Arial, sans-serif" font-weight="700">Conversao</text>
+  <text x="634" y="654" fill="#172B4D" font-size="36" font-family="Arial, sans-serif" font-weight="700">+11%</text>
+
+  <rect x="846" y="572" width="220" height="232" rx="14" fill="#FFF8F3"/>
+  <text x="870" y="610" fill="#A15C2D" font-size="13" font-family="Arial, sans-serif" font-weight="700">Receita extra</text>
+  <text x="870" y="654" fill="#172B4D" font-size="36" font-family="Arial, sans-serif" font-weight="700">R$ 42k</text>
+</svg>
