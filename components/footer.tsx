@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
@@ -5,11 +6,14 @@ export default function Footer() {
     <footer className="border-t border-stroke bg-white px-6 py-10">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-8 sm:flex-row sm:items-start sm:justify-between">
         <div>
-          <a href="#hero" className="inline-flex items-center gap-2 text-lg font-semibold tracking-tight text-foreground">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-brand text-sm font-bold text-white">
-              QI
-            </span>
-            Q-Indica
+          <a href="#hero" className="inline-flex items-center">
+            <Image
+              src="/qindica-logo.png"
+              alt="Q-Indica"
+              width={200}
+              height={58}
+              className="h-8 w-auto sm:h-9"
+            />
           </a>
           <p className="mt-3 max-w-sm text-sm text-text-muted">
             Recomendação inteligente de produtos complementares para aumentar ticket médio em farmácias.
