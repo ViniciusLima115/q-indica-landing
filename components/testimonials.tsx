@@ -1,5 +1,4 @@
-import { Quote } from "lucide-react";
-import { HoverCard, SectionReveal } from "./ui/motion";
+import { SectionReveal, HoverCard } from "./ui/motion";
 
 const testimonials = [
   {
@@ -24,31 +23,130 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <SectionReveal className="px-6 py-20">
-      <div className="mx-auto w-full max-w-6xl">
-        <h2 className="text-3xl font-bold leading-tight text-foreground sm:text-4xl">Depoimentos</h2>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+    <SectionReveal style={{ background: "#0F1612", padding: "96px 24px" }}>
+      <div style={{ maxWidth: 1152, margin: "0 auto" }}>
+        <p
+          style={{
+            color: "#22C55E",
+            fontSize: 12,
+            fontWeight: 700,
+            letterSpacing: "3px",
+            textTransform: "uppercase",
+            marginBottom: 16,
+            display: "flex",
+            alignItems: "center",
+            gap: 8,
+          }}
+        >
+          <span>■</span> DEPOIMENTOS
+        </p>
+        <h2
+          style={{
+            fontFamily: "var(--font-sora), sans-serif",
+            fontSize: "clamp(26px, 3.5vw, 40px)",
+            fontWeight: 800,
+            letterSpacing: "-1px",
+            color: "rgba(255,255,255,0.88)",
+            marginBottom: 48,
+            lineHeight: 1.15,
+          }}
+        >
+          O que farmacêuticos{" "}
+          <span style={{ color: "#1DB954" }}>dizem sobre o Q-Indica</span>
+        </h2>
+
+        <div
+          style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}
+          className="qi-testimonials-grid"
+        >
           {testimonials.map((item, index) => (
             <HoverCard
               key={item.name}
               delay={index * 0.1}
-              className="rounded-2xl border border-stroke bg-white p-6 shadow-lg shadow-[#102a4310]"
+              style={{
+                background: "#161E19",
+                border: "1px solid rgba(255,255,255,0.08)",
+                borderRadius: 16,
+                padding: "28px 24px",
+                position: "relative",
+                transition: "border-color 0.2s, transform 0.2s",
+              }}
             >
-              <Quote className="h-5 w-5 text-brand" />
-              <p className="mt-3 text-base leading-relaxed text-foreground">“{item.quote}”</p>
-              <div className="mt-5 flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-soft text-sm font-bold text-brand-strong">
+              {/* Decorative quote */}
+              <span
+                style={{
+                  position: "absolute",
+                  top: 20,
+                  right: 24,
+                  fontSize: 56,
+                  lineHeight: 1,
+                  color: "rgba(29,185,84,0.15)",
+                  fontFamily: "Georgia, serif",
+                  pointerEvents: "none",
+                  userSelect: "none",
+                }}
+              >
+                "
+              </span>
+
+              {/* Stars */}
+              <div style={{ marginBottom: 16, display: "flex", gap: 2 }}>
+                {[1, 2, 3, 4, 5].map((s) => (
+                  <span key={s} style={{ color: "#F59E0B", fontSize: 14 }}>★</span>
+                ))}
+              </div>
+
+              <p
+                style={{
+                  fontSize: 15,
+                  color: "rgba(255,255,255,0.80)",
+                  lineHeight: 1.7,
+                  marginBottom: 24,
+                  fontStyle: "italic",
+                }}
+              >
+                "{item.quote}"
+              </p>
+
+              <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                <div
+                  style={{
+                    width: 42,
+                    height: 42,
+                    borderRadius: "50%",
+                    background: "rgba(29,185,84,0.15)",
+                    border: "1px solid rgba(29,185,84,0.3)",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: 13,
+                    fontWeight: 700,
+                    color: "#1DB954",
+                    fontFamily: "var(--font-sora)",
+                    flexShrink: 0,
+                  }}
+                >
                   {item.avatar}
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-foreground">{item.name}</p>
-                  <p className="text-xs text-text-muted">{item.role}</p>
+                  <p style={{ fontWeight: 700, fontSize: 14, color: "rgba(255,255,255,0.88)", margin: "0 0 2px", fontFamily: "var(--font-sora)" }}>
+                    {item.name}
+                  </p>
+                  <p style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", margin: 0 }}>{item.role}</p>
                 </div>
               </div>
             </HoverCard>
           ))}
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 960px) {
+          .qi-testimonials-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </SectionReveal>
   );
 }

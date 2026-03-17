@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
-import { Manrope, Space_Grotesk } from "next/font/google";
+import { Inter, Sora } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const sora = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
+  weight: ["700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -58,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${manrope.variable} ${spaceGrotesk.variable} bg-background text-foreground antialiased`}
+        className={`${inter.variable} ${sora.variable} bg-background text-foreground antialiased`}
       >
         {children}
       </body>

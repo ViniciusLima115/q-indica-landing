@@ -1,28 +1,27 @@
 import { SectionReveal, HoverCard } from "./ui/motion";
 
-const problems = [
+const audiences = [
   {
-    emoji: "🤷",
-    title: "Balconistas não sabem o que sugerir",
-    description: "Sem suporte inteligente, sugestões adicionais deixam de acontecer no momento da compra.",
+    emoji: "🏪",
+    title: "Farmácias independentes",
+    description: "Para farmácias pequenas que querem crescer sem aumentar equipe. Comece rápido, veja resultado rápido.",
   },
   {
-    emoji: "📉",
-    title: "Ticket médio travado no básico",
-    description: "A venda termina no item principal, sem estratégia de recomendação complementar.",
+    emoji: "📈",
+    title: "Farmácias em crescimento",
+    description: "Para operações que já vendem bem e querem sistematizar o cross-sell para escalar faturamento.",
   },
   {
-    emoji: "🛒",
-    title: "Vendas limitadas ao produto pedido",
-    description: "A farmácia perde margem ao não explorar necessidades relacionadas ao tratamento.",
+    emoji: "🏢",
+    title: "Redes de farmácia",
+    description: "Para redes que precisam padronizar o atendimento e recomendação em todas as unidades.",
   },
 ];
 
-export default function Problem() {
+export default function ForWho() {
   return (
     <SectionReveal style={{ background: "#080C0A", padding: "96px 24px" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto" }}>
-        {/* Eyebrow */}
         <p
           style={{
             color: "#22C55E",
@@ -36,9 +35,8 @@ export default function Problem() {
             gap: 8,
           }}
         >
-          <span style={{ color: "#22C55E" }}>■</span> O PROBLEMA
+          <span>■</span> PARA QUEM É
         </p>
-
         <h2
           style={{
             fontFamily: "var(--font-sora), sans-serif",
@@ -46,36 +44,50 @@ export default function Problem() {
             fontWeight: 800,
             letterSpacing: "-1px",
             color: "rgba(255,255,255,0.88)",
-            maxWidth: 600,
             marginBottom: 48,
             lineHeight: 1.15,
           }}
         >
-          Farmácias perdem oportunidades de venda{" "}
-          <span style={{ color: "#1DB954" }}>todos os dias.</span>
+          O Q-Indica foi feito para{" "}
+          <span style={{ color: "#1DB954" }}>qualquer farmácia</span> que quer vender mais.
         </h2>
 
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gridTemplateColumns: "repeat(3, 1fr)",
             gap: 24,
           }}
+          className="qi-forwhom-grid"
         >
-          {problems.map((item, index) => (
+          {audiences.map((item, index) => (
             <HoverCard
               key={item.title}
               delay={index * 0.1}
               style={{
                 background: "#161E19",
                 border: "1px solid rgba(255,255,255,0.08)",
-                borderTop: "2px solid #EF4444",
                 borderRadius: 16,
                 padding: "28px 24px",
-                transition: "border-color 0.2s, transform 0.2s",
+                transition: "border-color 0.2s",
               }}
             >
-              <span style={{ fontSize: 28, display: "block", marginBottom: 16 }}>{item.emoji}</span>
+              <div
+                style={{
+                  width: 52,
+                  height: 52,
+                  borderRadius: 12,
+                  background: "rgba(29,185,84,0.1)",
+                  border: "1px solid rgba(29,185,84,0.2)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  fontSize: 24,
+                  marginBottom: 20,
+                }}
+              >
+                {item.emoji}
+              </div>
               <h3
                 style={{
                   fontFamily: "var(--font-sora), sans-serif",
@@ -88,13 +100,21 @@ export default function Problem() {
               >
                 {item.title}
               </h3>
-              <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", lineHeight: 1.65 }}>
+              <p style={{ fontSize: 14, color: "rgba(255,255,255,0.55)", lineHeight: 1.65, margin: 0 }}>
                 {item.description}
               </p>
             </HoverCard>
           ))}
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 960px) {
+          .qi-forwhom-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      `}</style>
     </SectionReveal>
   );
 }
