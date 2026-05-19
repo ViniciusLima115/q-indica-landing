@@ -129,7 +129,7 @@ export default function Hero() {
                   fontFamily: "var(--font-sora), sans-serif",
                 }}
               >
-                Inteligência de venda para farmácias
+                A ferramenta de indicação do balcão da sua farmácia
               </span>
             </div>
 
@@ -145,7 +145,7 @@ export default function Hero() {
                 fontFamily: "var(--font-sora), sans-serif",
               }}
             >
-              Aumente o ticket médio da sua farmácia com recomendações{" "}
+              Atenda com mais segurança e nunca mais trave na hora de{" "}
               <span
                 style={{
                   color: "#1DB954",
@@ -154,20 +154,20 @@ export default function Hero() {
                   textUnderlineOffset: 5,
                 }}
               >
-                inteligentes.
+                indicar.
               </span>
             </h1>
 
             {/* Pain points */}
             <div style={{ marginBottom: 20, display: "flex", flexDirection: "column", gap: 7 }}>
               <p style={{ color: "rgba(255,255,255,0.58)", fontSize: 15, margin: 0 }}>
-                🚫 Balconistas sem suporte inteligente perdem vendas todos os dias
+                🚫 Na correria do atendimento, o balconista esquece o que poderia oferecer junto
               </p>
               <p style={{ color: "rgba(255,255,255,0.58)", fontSize: 15, margin: 0 }}>
-                🚫 Ticket médio travado sem estratégia de recomendação complementar
+                🚫 A venda termina no produto pedido — e a farmácia perde sem perceber
               </p>
               <p style={{ color: "#1DB954", fontSize: 15, fontWeight: 600, margin: 0 }}>
-                ✓ O Q-Indica resolve isso automaticamente, em tempo real
+                ✓ O Q-Indica mostra o que sugerir no momento certo, a cada atendimento
               </p>
             </div>
 
@@ -180,8 +180,9 @@ export default function Hero() {
                 marginBottom: 32,
               }}
             >
-              O Q-Indica sugere automaticamente produtos complementares para cada medicamento,
-              ajudando balconistas a vender mais com segurança.
+              O Q-Indica ajuda sua equipe do balcão a lembrar o que oferecer, sugerir medicamentos
+              e suplementos complementares com mais segurança e transformar cada atendimento em
+              uma oportunidade de aumentar a cesta de compras.
             </p>
 
             {/* CTAs */}
@@ -336,7 +337,7 @@ export default function Hero() {
                       flexShrink: 0,
                     }}
                   />
-                  Inteligência ativa
+                  Guia ativo
                 </span>
               </div>
 

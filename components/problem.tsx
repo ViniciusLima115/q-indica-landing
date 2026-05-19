@@ -2,19 +2,19 @@ import { SectionReveal, HoverCard } from "./ui/motion";
 
 const problems = [
   {
-    emoji: "🤷",
-    title: "Balconistas não sabem o que sugerir",
-    description: "Sem suporte inteligente, sugestões adicionais deixam de acontecer no momento da compra.",
+    emoji: "🧠",
+    title: "O atendente depende só da memória",
+    description: "Na correria do balcão, ele esquece o que poderia oferecer junto — não porque não quer, mas porque não lembrou na hora.",
   },
   {
     emoji: "📉",
-    title: "Ticket médio travado no básico",
-    description: "A venda termina no item principal, sem estratégia de recomendação complementar.",
+    title: "A venda termina no produto pedido",
+    description: "O cliente pede um item e o atendente entrega apenas aquilo. A cesta fica pequena e o ticket médio fica limitado.",
   },
   {
-    emoji: "🛒",
-    title: "Vendas limitadas ao produto pedido",
-    description: "A farmácia perde margem ao não explorar necessidades relacionadas ao tratamento.",
+    emoji: "🔄",
+    title: "Cada vendedor atende de um jeito",
+    description: "Sem um guia de apoio, o padrão de recomendação varia entre experientes e iniciantes, e a farmácia perde consistência.",
   },
 ];
 
@@ -51,8 +51,8 @@ export default function Problem() {
             lineHeight: 1.15,
           }}
         >
-          Farmácias perdem oportunidades de venda{" "}
-          <span style={{ color: "#1DB954" }}>todos os dias.</span>
+          Sua farmácia pode estar perdendo vendas{" "}
+          <span style={{ color: "#1DB954" }}>todos os dias sem perceber.</span>
         </h2>
 
         <div

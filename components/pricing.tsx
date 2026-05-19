@@ -3,27 +3,27 @@ import { ActionLink, HoverCard, SectionReveal } from "./ui/motion";
 
 const plans = [
   {
-    name: "Starter",
-    audience: "Para farmácias pequenas",
-    price: "R$ 299",
+    name: "Go",
+    audience: "Para farmácias menores",
+    price: "R$ 149",
     period: "/mês",
-    features: ["1 unidade", "Sugestões em tempo real", "Suporte por e-mail"],
+    features: ["2 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Sugestões por produto e patologia"],
     featured: false,
   },
   {
-    name: "Pro",
+    name: "Start",
     audience: "Para farmácias em crescimento",
-    price: "R$ 699",
+    price: "R$ 249",
     period: "/mês",
-    features: ["Até 10 unidades", "Dashboard avançado", "Suporte prioritário"],
+    features: ["5 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: true,
   },
   {
-    name: "Enterprise",
-    audience: "Para redes de farmácia",
-    price: "Sob consulta",
-    period: "",
-    features: ["Unidades ilimitadas", "Integração dedicada", "Gerente de conta"],
+    name: "Pro",
+    audience: "Para redes e farmácias maiores",
+    price: "R$ 399",
+    period: "/mês",
+    features: ["12 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: false,
   },
 ];
@@ -58,11 +58,11 @@ export default function Pricing() {
             lineHeight: 1.15,
           }}
         >
-          Planos para cada fase da sua{" "}
-          <span style={{ color: "#1DB954" }}>operação</span>
+          Planos para cada tamanho de{" "}
+          <span style={{ color: "#1DB954" }}>equipe</span>
         </h2>
         <p style={{ color: "rgba(255,255,255,0.5)", fontSize: 16, marginBottom: 56 }}>
-          Planos pensados para cada fase da sua operação.
+          Escolha pelo número de usuários no balcão. Todos os planos incluem acesso de gestor.
         </p>
 
         <div

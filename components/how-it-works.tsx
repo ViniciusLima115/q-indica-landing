@@ -3,26 +3,31 @@ import { SectionReveal, HoverCard } from "./ui/motion";
 const steps = [
   {
     number: "01",
-    title: "Digite o medicamento",
-    description: "O atendente informa o medicamento vendido no sistema.",
+    title: "O cliente solicita um produto ou informa uma patologia",
+    description: "Ele chega ao balcão pedindo um medicamento, suplemento, ou informando uma condição de saúde.",
   },
   {
     number: "02",
-    title: "O sistema sugere produtos complementares",
-    description: "A IA apresenta opções adicionais com relevância farmacêutica.",
+    title: "O atendente pesquisa no Q-Indica",
+    description: "Em poucos segundos, ele acessa o guia pelo computador ou celular e pesquisa o produto ou a patologia informada.",
   },
   {
     number: "03",
-    title: "Aumente o ticket médio da venda",
-    description: "A equipe recomenda com segurança e eleva o valor por atendimento.",
+    title: "O Q-Indica mostra sugestões complementares",
+    description: "A ferramenta apresenta possibilidades de produtos complementares que podem fazer sentido para aquele atendimento.",
+  },
+  {
+    number: "04",
+    title: "O atendente oferece uma solução mais completa",
+    description: "Com mais opções na tela, o atendente ganha segurança para sugerir e aumentar a chance de incluir mais itens na cesta.",
   },
 ];
 
 const features = [
-  "Recomendações em tempo real",
-  "Base farmacêutica validada",
-  "Dashboard de performance",
-  "Suporte multiplataforma",
+  "Acesso pelo computador ou celular",
+  "Base farmacêutica curada",
+  "Painel de acompanhamento da equipe",
+  "Fácil de usar no ritmo do balcão",
 ];
 
 export default function HowItWorks() {
@@ -55,8 +60,8 @@ export default function HowItWorks() {
             lineHeight: 1.15,
           }}
         >
-          Em três passos, o Q-Indica transforma cada atendimento em{" "}
-          <span style={{ color: "#1DB954" }}>oportunidade de cross-sell.</span>
+          Em quatro passos, o Q-Indica transforma cada atendimento em{" "}
+          <span style={{ color: "#1DB954" }}>uma oportunidade de venda mais completa.</span>
         </h2>
 
         <div

@@ -2,34 +2,34 @@ import { SectionReveal, HoverCard } from "./ui/motion";
 
 const benefits = [
   {
-    icon: "🎯",
-    title: "Aumento de ticket médio",
-    description: "Aumente o valor por atendimento com recomendações complementares de alto potencial.",
+    icon: "🛒",
+    title: "Mais itens na cesta do cliente",
+    description: "Cada atendimento pode gerar novas possibilidades de recomendação. O cliente pediu um item, mas pode precisar de outros produtos relacionados.",
   },
   {
-    icon: "⚡",
-    title: "Sugestões instantâneas",
-    description: "Sugestões imediatas no balcão sem impactar a velocidade da operação.",
+    icon: "📈",
+    title: "Aumenta o ticket médio",
+    description: "Ao sugerir produtos complementares, a farmácia aumenta as chances de vender mais itens na mesma compra.",
   },
   {
-    icon: "👥",
-    title: "Apoia atendentes inexperientes",
-    description: "Padronize abordagem comercial e reduza insegurança de novos colaboradores.",
+    icon: "🤝",
+    title: "Ajuda novos funcionários",
+    description: "Quem está começando no balcão pode ter dificuldade para lembrar combinações e oportunidades de venda. O Q-Indica encurta esse caminho.",
   },
   {
-    icon: "📚",
-    title: "Base farmacêutica validada",
-    description: "Base técnica robusta para recomendações mais seguras e confiáveis.",
+    icon: "🔄",
+    title: "Padroniza a recomendação da equipe",
+    description: "Com o Q-Indica, os atendentes passam a ter uma base de apoio, reduzindo diferenças entre vendedores experientes e iniciantes.",
   },
   {
     icon: "📊",
-    title: "Dashboard de performance",
-    description: "Acompanhe métricas de recomendação e ticket médio em tempo real.",
+    title: "O gestor acompanha o uso",
+    description: "O gestor pode monitorar se a equipe está usando a ferramenta, com uma versão específica para orientar e avaliar os balconistas.",
   },
   {
-    icon: "🔒",
-    title: "Segurança clínica",
-    description: "Sugestões orientadas por lógica farmacêutica para evitar interações indesejadas.",
+    icon: "💊",
+    title: "Aproveita melhor o mix da farmácia",
+    description: "Produtos que muitas vezes ficam esquecidos podem voltar a aparecer no momento certo da venda.",
   },
 ];
 
@@ -63,8 +63,8 @@ export default function Benefits() {
             lineHeight: 1.15,
           }}
         >
-          Benefícios que viram{" "}
-          <span style={{ color: "#1DB954" }}>resultado no caixa</span>
+          Sua equipe vende melhor quando{" "}
+          <span style={{ color: "#1DB954" }}>sabe o que oferecer</span>
         </h2>
 
         <div

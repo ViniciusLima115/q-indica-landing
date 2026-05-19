@@ -3,18 +3,33 @@ import { SectionReveal, HoverCard } from "./ui/motion";
 const audiences = [
   {
     emoji: "🏪",
-    title: "Farmácias independentes",
-    description: "Para farmácias pequenas que querem crescer sem aumentar equipe. Comece rápido, veja resultado rápido.",
+    title: "Donos de farmácia",
+    description: "Que querem aumentar o faturamento e melhorar o desempenho da equipe no balcão.",
   },
   {
-    emoji: "📈",
-    title: "Farmácias em crescimento",
-    description: "Para operações que já vendem bem e querem sistematizar o cross-sell para escalar faturamento.",
+    emoji: "📋",
+    title: "Gestores de drogaria",
+    description: "Que precisam padronizar o atendimento no balcão e reduzir variação entre os atendentes.",
+  },
+  {
+    emoji: "🧑‍💼",
+    title: "Balconistas iniciantes",
+    description: "Que ainda não dominam todas as possibilidades de recomendação e precisam de apoio na hora da venda.",
+  },
+  {
+    emoji: "⚡",
+    title: "Atendentes experientes",
+    description: "Que querem ganhar agilidade e não deixar escapar oportunidades de complementar a venda.",
+  },
+  {
+    emoji: "💊",
+    title: "Farmacêuticos",
+    description: "Que desejam ampliar sugestões, garantir indicações mais completas e apoiar melhor a equipe.",
   },
   {
     emoji: "🏢",
-    title: "Redes de farmácia",
-    description: "Para redes que precisam padronizar o atendimento e recomendação em todas as unidades.",
+    title: "Redes e farmácias independentes",
+    description: "Que querem melhorar a performance comercial sem complicar a rotina do balcão.",
   },
 ];
 
@@ -48,8 +63,8 @@ export default function ForWho() {
             lineHeight: 1.15,
           }}
         >
-          O Q-Indica foi feito para{" "}
-          <span style={{ color: "#1DB954" }}>qualquer farmácia</span> que quer vender mais.
+          O Q-Indica foi criado para farmácias que querem{" "}
+          <span style={{ color: "#1DB954" }}>vender mais com indicação inteligente.</span>
         </h2>
 
         <div

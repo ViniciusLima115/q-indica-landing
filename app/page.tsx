@@ -1,3 +1,4 @@
+import BeforeAfter from "../components/before-after";
 import Benefits from "../components/benefits";
 import Cta from "../components/cta";
 import Faq from "../components/faq";
@@ -25,6 +26,7 @@ export default function Home() {
       <VideoDemo />
       <Benefits />
       <ForWho />
+      <BeforeAfter />
       <SocialProof />
       <Testimonials />
       <Pricing />

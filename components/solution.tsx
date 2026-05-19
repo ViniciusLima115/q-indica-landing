@@ -19,19 +19,20 @@ export default function Solution() {
               marginBottom: 20,
             }}
           >
-            O Q-Indica transforma cada venda em uma{" "}
-            <span style={{ color: "#1DB954" }}>oportunidade.</span>
+            O Q-Indica não substitui o vendedor.{" "}
+            <span style={{ color: "#1DB954" }}>Ele potencializa o vendedor.</span>
           </h2>
           <p style={{ color: "rgba(255,255,255,0.55)", fontSize: 16, lineHeight: 1.7, marginBottom: 28 }}>
-            O sistema sugere produtos complementares automaticamente com base em lógica farmacêutica,
-            histórico de correlações e contexto do medicamento informado.
+            Ele não tira o papel do atendente — dá apoio para que ele recomende melhor. Em vez de
+            depender apenas da memória ou da iniciativa de cada colaborador, sua farmácia passa a ter
+            um guia de apoio para tornar a recomendação mais rápida, prática e padronizada.
           </p>
 
           <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: 10 }}>
             {[
-              "Recomendações em tempo real no balcão.",
-              "Sugestões confiáveis orientadas por contexto terapêutico.",
-              "Padronização da qualidade de venda em toda a equipe.",
+              "Guia de apoio acessível no balcão em tempo real.",
+              "Sugestões confiáveis baseadas em correlações farmacêuticas.",
+              "Padroniza o atendimento entre experientes e iniciantes.",
             ].map((item) => (
               <li
                 key={item}
@@ -92,7 +93,7 @@ export default function Solution() {
               }}
             >
               <Sparkles style={{ width: 12, height: 12 }} />
-              Inteligência ativa
+              Guia ativo
             </span>
           </div>
 
