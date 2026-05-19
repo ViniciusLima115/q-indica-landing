@@ -4,25 +4,28 @@ import { ActionLink, HoverCard, SectionReveal } from "./ui/motion";
 const plans = [
   {
     name: "Go",
-    audience: "Para farmácias menores",
-    price: "R$ 149",
-    period: "/mês",
+    audience: "Ideal para farmácias bem pequenas que querem começar a vender mais com tecnologia.",
+    price: "12x R$ 47,47",
+    period: "/ano",
+    priceAnnual: "ou R$ 459,00/ano à vista",
     features: ["2 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Sugestões por produto e patologia"],
     featured: false,
   },
   {
     name: "Start",
-    audience: "Para farmácias em crescimento",
-    price: "R$ 249",
-    period: "/mês",
+    audience: "Pensado para equipes pequenas que querem trabalhar de forma mais organizada e vender mais juntos.",
+    price: "12x R$ 70,02",
+    period: "/ano",
+    priceAnnual: "ou R$ 677,00/ano à vista",
     features: ["5 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: true,
   },
   {
     name: "Pro",
-    audience: "Para redes e farmácias maiores",
-    price: "R$ 399",
-    period: "/mês",
+    audience: "Feito para farmácias que já têm uma equipe estruturada e buscam resultados consistentes e escala.",
+    price: "12x R$ 111,39",
+    period: "/ano",
+    priceAnnual: "ou R$ 1.077,00/ano à vista",
     features: ["12 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: false,
   },
@@ -123,21 +126,28 @@ export default function Pricing() {
                 </p>
 
                 <div style={{ marginBottom: 24 }}>
-                  <span
-                    style={{
-                      fontFamily: "var(--font-sora), sans-serif",
-                      fontSize: "clamp(28px, 3vw, 36px)",
-                      fontWeight: 800,
-                      color: plan.featured ? "#1DB954" : "rgba(255,255,255,0.88)",
-                      lineHeight: 1,
-                    }}
-                  >
-                    {plan.price}
-                  </span>
-                  {plan.period && (
-                    <span style={{ fontSize: 14, color: "rgba(255,255,255,0.45)", marginLeft: 4 }}>
-                      {plan.period}
+                  <div>
+                    <span
+                      style={{
+                        fontFamily: "var(--font-sora), sans-serif",
+                        fontSize: "clamp(22px, 2.5vw, 28px)",
+                        fontWeight: 800,
+                        color: plan.featured ? "#1DB954" : "rgba(255,255,255,0.88)",
+                        lineHeight: 1,
+                      }}
+                    >
+                      {plan.price}
                     </span>
+                    {plan.period && (
+                      <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", marginLeft: 4 }}>
+                        {plan.period}
+                      </span>
+                    )}
+                  </div>
+                  {"priceAnnual" in plan && plan.priceAnnual && (
+                    <p style={{ fontSize: 12, color: "rgba(255,255,255,0.35)", margin: "6px 0 0" }}>
+                      {plan.priceAnnual}
+                    </p>
                   )}
                 </div>
 

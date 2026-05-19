@@ -136,11 +136,21 @@ export default function Footer() {
           margin: "40px auto 0",
           paddingTop: 24,
           borderTop: "1px solid rgba(255,255,255,0.06)",
-          fontSize: 12,
-          color: "rgba(255,255,255,0.3)",
         }}
       >
-        © {new Date().getFullYear()} Q-Indica. Todos os direitos reservados.
+        <p
+          style={{
+            fontSize: 11,
+            color: "rgba(255,255,255,0.25)",
+            lineHeight: 1.65,
+            marginBottom: 16,
+          }}
+        >
+          Recomendações dessa ferramenta são de caráter educacional e de apoio profissional. Alguns medicamentos podem exigir prescrição e devem seguir a legislação vigente. O conteúdo não substitui o julgamento clínico nem o encaminhamento ao médico ou farmacêutico quando necessário. Farmacêutica responsável: Janecleia da Silva Santos Ferreira — CRF 3555/AL.
+        </p>
+        <p style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", margin: 0 }}>
+          © {new Date().getFullYear()} Q-Indica. Todos os direitos reservados.
+        </p>
       </div>
     </footer>
   );
