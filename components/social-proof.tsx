@@ -10,6 +10,7 @@ const metrics = [
 export default function SocialProof() {
   return (
     <SectionReveal
+      className="qi-s"
       style={{
         background: "#0F1612",
         padding: "80px 24px",

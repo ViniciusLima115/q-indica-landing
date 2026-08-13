@@ -43,7 +43,7 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <SectionReveal id="faq" style={{ background: "#080C0A", padding: "96px 24px" }}>
+    <SectionReveal id="faq" className="qi-s" style={{ background: "#080C0A", padding: "96px 24px" }}>
       <div style={{ maxWidth: 720, margin: "0 auto" }}>
         <p
           style={{

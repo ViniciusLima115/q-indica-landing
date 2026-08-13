@@ -22,7 +22,7 @@ const after = [
 
 export default function BeforeAfter() {
   return (
-    <SectionReveal style={{ background: "#0F1612", padding: "96px 24px" }}>
+    <SectionReveal className="qi-s" style={{ background: "#0F1612", padding: "96px 24px" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto" }}>
         <p
           style={{

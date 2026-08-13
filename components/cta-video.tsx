@@ -1,10 +1,9 @@
-import { CirclePlay } from "lucide-react";
 import { ActionLink, SectionReveal } from "./ui/motion";
 
-export default function VideoDemo() {
+export default function CtaVideo() {
   return (
-    <SectionReveal id="video-demo" className="qi-s" style={{ background: "#0F1612", padding: "96px 24px" }}>
-      <div style={{ maxWidth: 1152, margin: "0 auto" }}>
+    <SectionReveal id="cta-video" className="qi-s" style={{ background: "#0F1612", padding: "96px 24px" }}>
+      <div style={{ maxWidth: 1152, margin: "0 auto", textAlign: "center" }}>
         <p
           style={{
             color: "#22C55E",
@@ -15,10 +14,11 @@ export default function VideoDemo() {
             marginBottom: 16,
             display: "flex",
             alignItems: "center",
+            justifyContent: "center",
             gap: 8,
           }}
         >
-          <span>■</span> DEMONSTRAÇÃO
+          <span>■</span> COMECE POR AQUI
         </p>
         <h2
           style={{
@@ -31,7 +31,7 @@ export default function VideoDemo() {
             lineHeight: 1.15,
           }}
         >
-          Veja o Q-Indica em ação.
+          Entenda o Q-Indica em poucos segundos.
         </h2>
 
         <div
@@ -41,13 +41,15 @@ export default function VideoDemo() {
             border: "1px solid rgba(255,255,255,0.08)",
             background: "#000",
             boxShadow: "0 24px 64px rgba(0,0,0,0.6)",
+            maxWidth: 380,
+            margin: "0 auto",
           }}
         >
-          <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+          <div style={{ position: "relative", paddingBottom: "177.78%", height: 0 }}>
             <iframe
               style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-              src="https://www.youtube.com/embed/R31TeAkPxdQ"
-              title="Demonstração Q-Indica"
+              src="https://www.youtube.com/embed/ScLbU_6owRk"
+              title="Q-Indica"
               loading="lazy"
               referrerPolicy="strict-origin-when-cross-origin"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -68,7 +70,6 @@ export default function VideoDemo() {
             }}
           >
             Ver planos e preços
-            <CirclePlay style={{ width: 16, height: 16 }} />
           </ActionLink>
         </div>
       </div>

@@ -96,3 +96,10 @@ h1, h2, h3, h4 {
 .ticker-track {
   animation: ticker-scroll 30s linear infinite;
 }
+
+/* Mobile section padding — overrides inline styles */
+@media (max-width: 600px) {
+  .qi-s {
+    padding: 64px 16px !important;
+  }
+}

@@ -1,9 +1,10 @@
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Instagram, Linkedin, Mail, Youtube } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer
+      className="qi-footer"
       style={{
         background: "#080C0A",
         borderTop: "1px solid rgba(255,255,255,0.08)",
@@ -11,6 +12,7 @@ export default function Footer() {
       }}
     >
       <div
+        className="qi-footer-top"
         style={{
           maxWidth: 1152,
           margin: "0 auto",
@@ -38,6 +40,7 @@ export default function Footer() {
 
         {/* Nav links */}
         <div
+          className="qi-footer-nav"
           style={{
             display: "flex",
             gap: 48,
@@ -60,11 +63,11 @@ export default function Footer() {
               Contato
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-              <a href="mailto:contato@q-indica.com" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
-                contato@q-indica.com
+              <a href="mailto:contatoqindica@gmail.com" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
+                contatoqindica@gmail.com
               </a>
-              <a href="tel:+5582999999999" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
-                +55 82 99999-9999
+              <a href="tel:+5581998394496" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
+                +55 81 99839-4496
               </a>
               <a href="#" style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", textDecoration: "none" }}>
                 Política de privacidade
@@ -110,7 +113,25 @@ export default function Footer() {
                 <Instagram style={{ width: 14, height: 14 }} />
               </a>
               <a
-                href="mailto:contato@q-indica.com"
+                href="https://www.youtube.com/@Q-Indica-oficial"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                style={{
+                  width: 34,
+                  height: 34,
+                  borderRadius: 8,
+                  border: "1px solid rgba(255,255,255,0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  color: "rgba(255,255,255,0.5)",
+                }}
+              >
+                <Youtube style={{ width: 14, height: 14 }} />
+              </a>
+              <a
+                href="mailto:contatoqindica@gmail.com"
                 aria-label="E-mail"
                 style={{
                   width: 34,
@@ -129,6 +150,21 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 640px) {
+          .qi-footer {
+            padding: 40px 16px 24px !important;
+          }
+          .qi-footer-top {
+            flex-direction: column !important;
+            gap: 32px !important;
+          }
+          .qi-footer-nav {
+            gap: 32px !important;
+          }
+        }
+      `}</style>
 
       <div
         style={{

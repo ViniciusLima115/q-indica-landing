@@ -1,6 +1,7 @@
 import BeforeAfter from "../components/before-after";
 import Benefits from "../components/benefits";
 import Cta from "../components/cta";
+import CtaVideo from "../components/cta-video";
 import Faq from "../components/faq";
 import FinalCta from "../components/final-cta";
 import Footer from "../components/footer";
@@ -19,6 +20,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <CtaVideo />
       <Ticker />
       <Problem />
       <HowItWorks />

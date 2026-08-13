@@ -35,7 +35,7 @@ const audiences = [
 
 export default function ForWho() {
   return (
-    <SectionReveal style={{ background: "#080C0A", padding: "96px 24px" }}>
+    <SectionReveal className="qi-s" style={{ background: "#080C0A", padding: "96px 24px" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto" }}>
         <p
           style={{
@@ -125,6 +125,11 @@ export default function ForWho() {
 
       <style>{`
         @media (max-width: 960px) {
+          .qi-forwhom-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+          }
+        }
+        @media (max-width: 480px) {
           .qi-forwhom-grid {
             grid-template-columns: 1fr !important;
           }

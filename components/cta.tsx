@@ -25,7 +25,7 @@ export default function Cta() {
   };
 
   return (
-    <SectionReveal id="cta" style={{ background: "#0F1612", padding: "96px 24px" }}>
+    <SectionReveal id="cta" className="qi-s" style={{ background: "#0F1612", padding: "96px 24px" }}>
       <div
         style={{
           maxWidth: 760,
@@ -70,6 +70,7 @@ export default function Cta() {
 
           <form
             onSubmit={handleSubmit(onSubmit)}
+            className="qi-cta-form"
             style={{
               display: "flex",
               gap: 10,
@@ -141,6 +142,20 @@ export default function Cta() {
           </p>
         </div>
       </div>
+      <style>{`
+        @media (max-width: 480px) {
+          .qi-cta-form {
+            flex-direction: column !important;
+          }
+          .qi-cta-form > div {
+            width: 100% !important;
+            min-width: unset !important;
+          }
+          .qi-cta-form > button {
+            width: 100% !important;
+          }
+        }
+      `}</style>
     </SectionReveal>
   );
 }

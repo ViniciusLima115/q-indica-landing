@@ -3,7 +3,7 @@ import { ActionLink, SectionReveal } from "./ui/motion";
 
 export default function FinalCta() {
   return (
-    <SectionReveal id="final-cta" style={{ background: "#0F1612", padding: "96px 24px" }}>
+    <SectionReveal id="final-cta" className="qi-s" style={{ background: "#0F1612", padding: "96px 24px" }}>
       <div
         style={{
           maxWidth: 800,
@@ -66,7 +66,7 @@ export default function FinalCta() {
               fontFamily: "var(--font-sora), sans-serif",
             }}
           >
-            Começar agora
+            Quero começar agora
             <ArrowRight style={{ width: 18, height: 18 }} />
           </ActionLink>
         </div>

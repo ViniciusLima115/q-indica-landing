@@ -3,7 +3,7 @@ import { SectionReveal } from "./ui/motion";
 
 export default function Solution() {
   return (
-    <SectionReveal id="solution" style={{ background: "#0F1612", padding: "96px 24px" }}>
+    <SectionReveal id="solution" className="qi-s" style={{ background: "#0F1612", padding: "96px 24px" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 56, alignItems: "center" }}
         className="qi-solution-grid"
       >

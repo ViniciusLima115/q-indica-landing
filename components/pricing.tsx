@@ -5,35 +5,38 @@ const plans = [
   {
     name: "Go",
     audience: "Ideal para farmácias bem pequenas que querem começar a vender mais com tecnologia.",
-    price: "12x R$ 47,47",
+    price: "12x R$ 60,92",
     period: "/ano",
-    priceAnnual: "ou R$ 459,00/ano à vista",
+    priceAnnual: "ou R$ 589,00 à vista",
     features: ["2 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Sugestões por produto e patologia"],
     featured: false,
+    cta: "Quero começar",
   },
   {
     name: "Start",
     audience: "Pensado para equipes pequenas que querem trabalhar de forma mais organizada e vender mais juntos.",
-    price: "12x R$ 70,02",
+    price: "12x R$ 92,77",
     period: "/ano",
-    priceAnnual: "ou R$ 677,00/ano à vista",
+    priceAnnual: "ou R$ 897,00 à vista",
     features: ["5 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: true,
+    cta: "Quero para minha equipe",
   },
   {
     name: "Pro",
     audience: "Feito para farmácias que já têm uma equipe estruturada e buscam resultados consistentes e escala.",
-    price: "12x R$ 111,39",
+    price: "12x R$ 152,76",
     period: "/ano",
-    priceAnnual: "ou R$ 1.077,00/ano à vista",
+    priceAnnual: "ou R$ 1.477,00 à vista",
     features: ["12 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: false,
+    cta: "Quero acelerar minhas vendas",
   },
 ];
 
 export default function Pricing() {
   return (
-    <SectionReveal id="pricing" style={{ background: "#080C0A", padding: "96px 24px" }}>
+    <SectionReveal id="pricing" className="qi-s" style={{ background: "#080C0A", padding: "96px 24px" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto" }}>
         <p
           style={{
@@ -185,7 +188,7 @@ export default function Pricing() {
                     fontSize: 14,
                   }}
                 >
-                  Escolher plano
+                  {plan.cta}
                 </ActionLink>
               </HoverCard>
             </div>

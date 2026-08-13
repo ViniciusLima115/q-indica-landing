@@ -20,7 +20,7 @@ const problems = [
 
 export default function Problem() {
   return (
-    <SectionReveal style={{ background: "#080C0A", padding: "96px 24px" }}>
+    <SectionReveal className="qi-s" style={{ background: "#080C0A", padding: "96px 24px" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto" }}>
         {/* Eyebrow */}
         <p
