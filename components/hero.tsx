@@ -55,9 +55,12 @@ export default function Hero() {
       {/* Hero Section */}
       <section
         id="hero"
+        className="qi-hero-section"
         style={{
           background: "#0F1612",
           paddingTop: 64,
+          paddingLeft: 24,
+          paddingRight: 24,
           position: "relative",
           overflow: "hidden",
         }}
@@ -223,15 +226,22 @@ export default function Hero() {
 
         <style>{`
           .qi-hero-grid {
-            max-width: 720px;
+            max-width: 1152px;
             margin: 0 auto;
-            padding: 80px 24px 110px;
+            padding: 80px 0 110px;
             position: relative;
             z-index: 1;
           }
+          .qi-hero-grid > div {
+            max-width: 640px;
+          }
           @media (max-width: 600px) {
+            .qi-hero-section {
+              padding-left: 16px !important;
+              padding-right: 16px !important;
+            }
             .qi-hero-grid {
-              padding: 56px 16px 64px;
+              padding: 56px 0 64px;
             }
           }
         `}</style>

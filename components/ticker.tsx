@@ -8,7 +8,7 @@ export default function Ticker() {
     "Segurança clínica",
   ];
 
-  const repeated = [...items, ...items];
+  const repeated = [...items, ...items, ...items, ...items];
 
   return (
     <div
