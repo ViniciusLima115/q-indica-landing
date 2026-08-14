@@ -11,6 +11,7 @@ const plans = [
     features: ["2 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Sugestões por produto e patologia"],
     featured: false,
     cta: "Quero começar",
+    checkoutUrl: "https://pay.hotmart.com/M99698697O?off=z39e8zy2",
   },
   {
     name: "Start",
@@ -21,6 +22,7 @@ const plans = [
     features: ["5 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: true,
     cta: "Quero para minha equipe",
+    checkoutUrl: "https://pay.hotmart.com/M99698697O?off=8l49p51a&checkoutMode=6",
   },
   {
     name: "Pro",
@@ -31,6 +33,7 @@ const plans = [
     features: ["12 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: false,
     cta: "Quero acelerar minhas vendas",
+    checkoutUrl: "https://pay.hotmart.com/M99698697O?off=fwpm7bs0&checkoutMode=6",
   },
 ];
 
@@ -177,7 +180,9 @@ export default function Pricing() {
                 </ul>
 
                 <ActionLink
-                  href="#final-cta"
+                  href={plan.checkoutUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex w-full items-center justify-center rounded-[10px] py-3 text-sm font-semibold"
                   style={{
                     background: plan.featured ? "#1DB954" : "transparent",

@@ -20,6 +20,8 @@ type ActionLinkProps = {
   href: string;
   className?: string;
   style?: React.CSSProperties;
+  target?: string;
+  rel?: string;
 };
 
 export function SectionReveal({
@@ -60,12 +62,14 @@ export function HoverCard({ children, className, delay = 0, style }: BaseProps) 
   );
 }
 
-export function ActionLink({ children, href, className, style }: ActionLinkProps) {
+export function ActionLink({ children, href, className, style, target, rel }: ActionLinkProps) {
   return (
     <motion.a
       href={href}
       className={className}
       style={style}
+      target={target}
+      rel={rel}
       whileHover={{ y: -2, scale: 1.01 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.18 }}
