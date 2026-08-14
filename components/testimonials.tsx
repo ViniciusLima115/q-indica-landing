@@ -1,23 +1,24 @@
+import { Instagram } from "lucide-react";
 import { SectionReveal, HoverCard } from "./ui/motion";
 
 const testimonials = [
   {
-    name: "Marina Oliveira",
-    role: "Gerente de Farmácia",
-    quote: "Depois que começamos a usar o Q-Indica, nosso ticket médio aumentou.",
-    avatar: "MO",
+    name: "Anderson Mendonça",
+    role: "Farmácia Poupe Mais",
+    videoUrl: "https://www.instagram.com/reel/DOVp6TqDZOE/",
+    avatar: "AM",
   },
   {
-    name: "Carlos Menezes",
-    role: "Diretor de Rede de Drogarias",
-    quote: "Hoje a equipe recomenda com mais segurança e o faturamento subiu mês após mês.",
-    avatar: "CM",
+    name: "Rogério Santos",
+    role: "Smart Farma",
+    videoUrl: "https://www.instagram.com/reel/DMP2UAGRc-4/",
+    avatar: "RS",
   },
   {
-    name: "Juliana Costa",
-    role: "Farmacêutica Responsável",
-    quote: "A ferramenta trouxe padronização e confiança para todo atendimento no balcão.",
-    avatar: "JC",
+    name: "Manuela Carneiro",
+    role: "Farma Drogabem",
+    quote: "A equipe tem aderido a ferramenta e conseguido agregar todos os dias produtos e suplementos além do que o cliente vem comprar.",
+    avatar: "MC",
   },
 ];
 
@@ -69,6 +70,8 @@ export default function Testimonials() {
                 borderRadius: 16,
                 padding: "28px 24px",
                 position: "relative",
+                display: "flex",
+                flexDirection: "column",
                 transition: "border-color 0.2s, transform 0.2s",
               }}
             >
@@ -96,17 +99,40 @@ export default function Testimonials() {
                 ))}
               </div>
 
-              <p
-                style={{
-                  fontSize: 15,
-                  color: "rgba(255,255,255,0.80)",
-                  lineHeight: 1.7,
-                  marginBottom: 24,
-                  fontStyle: "italic",
-                }}
-              >
-                "{item.quote}"
-              </p>
+              {item.quote ? (
+                <p
+                  style={{
+                    fontSize: 15,
+                    color: "rgba(255,255,255,0.80)",
+                    lineHeight: 1.7,
+                    marginBottom: 24,
+                    fontStyle: "italic",
+                    flex: 1,
+                  }}
+                >
+                  "{item.quote}"
+                </p>
+              ) : (
+                <a
+                  href={item.videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 8,
+                    color: "#1DB954",
+                    fontSize: 14,
+                    fontWeight: 600,
+                    textDecoration: "none",
+                    marginBottom: 24,
+                    flex: 1,
+                  }}
+                >
+                  <Instagram style={{ width: 16, height: 16, flexShrink: 0 }} />
+                  Ver depoimento em vídeo no Instagram
+                </a>
+              )}
 
               <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
                 <div

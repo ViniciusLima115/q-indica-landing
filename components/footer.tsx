@@ -26,11 +26,11 @@ export default function Footer() {
         <div style={{ maxWidth: 280 }}>
           <a href="#hero" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none", marginBottom: 14 }}>
             <Image
-              src="/qindica-logo.png"
+              src="/qindica-logo-white.png"
               alt="Q-Indica"
               width={200}
               height={58}
-              style={{ height: 36, width: "auto", filter: "brightness(0) invert(1)" }}
+              style={{ height: 36, width: "auto" }}
             />
           </a>
           <p style={{ fontSize: 13, color: "rgba(255,255,255,0.45)", lineHeight: 1.65, margin: 0 }}>

@@ -34,12 +34,12 @@ export default function Hero() {
         >
           <a href="#hero" style={{ display: "inline-flex", alignItems: "center", textDecoration: "none" }}>
             <Image
-              src="/qindica-logo.png"
+              src="/qindica-logo-white.png"
               alt="Q-Indica"
               width={200}
               height={58}
               priority
-              style={{ height: 50, width: "auto", filter: "brightness(0) invert(1)" }}
+              style={{ height: 50, width: "auto" }}
             />
           </a>
           <ActionLink
