@@ -1,17 +1,16 @@
-import { Instagram } from "lucide-react";
 import { SectionReveal, HoverCard } from "./ui/motion";
 
 const testimonials = [
   {
     name: "Anderson Mendonça",
     role: "Farmácia Poupe Mais",
-    videoUrl: "https://www.instagram.com/reel/DOVp6TqDZOE/",
+    embedUrl: "https://www.instagram.com/reel/DOVp6TqDZOE/embed/",
     avatar: "AM",
   },
   {
     name: "Rogério Santos",
     role: "Smart Farma",
-    videoUrl: "https://www.instagram.com/reel/DMP2UAGRc-4/",
+    embedUrl: "https://www.instagram.com/reel/DMP2UAGRc-4/embed/",
     avatar: "RS",
   },
   {
@@ -57,7 +56,7 @@ export default function Testimonials() {
         </h2>
 
         <div
-          style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24 }}
+          style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 24, alignItems: "start" }}
           className="qi-testimonials-grid"
         >
           {testimonials.map((item, index) => (
@@ -75,63 +74,54 @@ export default function Testimonials() {
                 transition: "border-color 0.2s, transform 0.2s",
               }}
             >
-              {/* Decorative quote */}
-              <span
-                style={{
-                  position: "absolute",
-                  top: 20,
-                  right: 24,
-                  fontSize: 56,
-                  lineHeight: 1,
-                  color: "rgba(29,185,84,0.15)",
-                  fontFamily: "Georgia, serif",
-                  pointerEvents: "none",
-                  userSelect: "none",
-                }}
-              >
-                "
-              </span>
-
-              {/* Stars */}
-              <div style={{ marginBottom: 16, display: "flex", gap: 2 }}>
-                {[1, 2, 3, 4, 5].map((s) => (
-                  <span key={s} style={{ color: "#F59E0B", fontSize: 14 }}>★</span>
-                ))}
-              </div>
-
               {item.quote ? (
-                <p
-                  style={{
-                    fontSize: 15,
-                    color: "rgba(255,255,255,0.80)",
-                    lineHeight: 1.7,
-                    marginBottom: 24,
-                    fontStyle: "italic",
-                    flex: 1,
-                  }}
-                >
-                  "{item.quote}"
-                </p>
+                <>
+                  {/* Decorative quote */}
+                  <span
+                    style={{
+                      position: "absolute",
+                      top: 20,
+                      right: 24,
+                      fontSize: 56,
+                      lineHeight: 1,
+                      color: "rgba(29,185,84,0.15)",
+                      fontFamily: "Georgia, serif",
+                      pointerEvents: "none",
+                      userSelect: "none",
+                    }}
+                  >
+                    "
+                  </span>
+
+                  {/* Stars */}
+                  <div style={{ marginBottom: 16, display: "flex", gap: 2 }}>
+                    {[1, 2, 3, 4, 5].map((s) => (
+                      <span key={s} style={{ color: "#F59E0B", fontSize: 14 }}>★</span>
+                    ))}
+                  </div>
+
+                  <p
+                    style={{
+                      fontSize: 15,
+                      color: "rgba(255,255,255,0.80)",
+                      lineHeight: 1.7,
+                      marginBottom: 24,
+                      fontStyle: "italic",
+                      flex: 1,
+                    }}
+                  >
+                    "{item.quote}"
+                  </p>
+                </>
               ) : (
-                <a
-                  href={item.videoUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: 8,
-                    color: "#1DB954",
-                    fontSize: 14,
-                    fontWeight: 600,
-                    textDecoration: "none",
-                    marginBottom: 24,
-                    flex: 1,
-                  }}
-                >
-                  <Instagram style={{ width: 16, height: 16, flexShrink: 0 }} />
-                  Ver depoimento em vídeo no Instagram
-                </a>
+                <div style={{ margin: "-28px -24px 20px", borderRadius: "16px 16px 0 0", overflow: "hidden", background: "#000" }}>
+                  <iframe
+                    src={item.embedUrl}
+                    title={`Depoimento de ${item.name}`}
+                    loading="lazy"
+                    style={{ width: "100%", height: 600, border: "none", display: "block" }}
+                  />
+                </div>
               )}
 
               <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
