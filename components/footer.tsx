@@ -97,7 +97,9 @@ export default function Footer() {
                 <Linkedin style={{ width: 14, height: 14 }} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/qindica_oficial/"
+                target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 style={{
                   width: 34,
@@ -113,7 +115,7 @@ export default function Footer() {
                 <Instagram style={{ width: 14, height: 14 }} />
               </a>
               <a
-                href="https://www.youtube.com/@Q-Indica-oficial"
+                href="https://www.youtube.com/channel/UCDOgfOHWdWMo8yShXL54CzQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"

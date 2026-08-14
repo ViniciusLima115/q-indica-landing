@@ -1,3 +1,4 @@
+import { Instagram, Youtube } from "lucide-react";
 import { ActionLink, SectionReveal } from "./ui/motion";
 
 export default function CtaVideo() {
@@ -52,6 +53,48 @@ export default function CtaVideo() {
           >
             Ver planos e preços
           </ActionLink>
+
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginTop: 24 }} className="qi-ctavideo-social">
+            <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}>Siga a gente</span>
+            <a
+              href="https://www.instagram.com/qindica_oficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              style={{
+                width: 36,
+                height: 36,
+                borderRadius: 8,
+                border: "1px solid rgba(255,255,255,0.12)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "rgba(255,255,255,0.7)",
+                transition: "border-color 0.2s, color 0.2s",
+              }}
+            >
+              <Instagram style={{ width: 16, height: 16 }} />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCDOgfOHWdWMo8yShXL54CzQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              style={{
+                width: 36,
+                height: 36,
+                borderRadius: 8,
+                border: "1px solid rgba(255,255,255,0.12)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "rgba(255,255,255,0.7)",
+                transition: "border-color 0.2s, color 0.2s",
+              }}
+            >
+              <Youtube style={{ width: 16, height: 16 }} />
+            </a>
+          </div>
         </div>
 
         <div
@@ -88,6 +131,9 @@ export default function CtaVideo() {
             text-align: center;
           }
           .qi-ctavideo-grid p {
+            justify-content: center;
+          }
+          .qi-ctavideo-social {
             justify-content: center;
           }
         }
