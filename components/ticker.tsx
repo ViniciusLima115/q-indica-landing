@@ -1,11 +1,9 @@
 export default function Ticker() {
   const items = [
-    "10.000+ produtos analisados",
-    "100.000+ correlações",
-    "+18% ticket médio",
-    "72% taxa de aceitação",
-    "Brasil inteiro",
-    "Segurança clínica",
+    "QUERO O Q-INDICA NA MINHA FARMÁCIA",
+    "QUERO PARA MINHA EQUIPE",
+    "QUERO ACELERAR MINHAS VENDAS",
+    "QUERO COMEÇAR AGORA",
   ];
 
   const repeated = [...items, ...items, ...items, ...items];
