@@ -10,6 +10,7 @@ const plans = [
     priceAnnual: "ou R$ 589,00 à vista",
     features: ["2 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Sugestões por produto e patologia"],
     featured: false,
+    badge: undefined as string | undefined,
     cta: "Quero começar",
     checkoutUrl: "https://pay.hotmart.com/M99698697O?off=z39e8zy2",
   },
@@ -21,6 +22,7 @@ const plans = [
     priceAnnual: "ou R$ 897,00 à vista",
     features: ["5 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: true,
+    badge: "Mais escolhido",
     cta: "Quero para minha equipe",
     checkoutUrl: "https://pay.hotmart.com/M99698697O?off=8l49p51a&checkoutMode=6",
   },
@@ -32,6 +34,7 @@ const plans = [
     priceAnnual: "ou R$ 1.477,00 à vista",
     features: ["12 usuários no balcão", "1 acesso de gestor", "Acesso online (computador e celular)", "Painel de acompanhamento da equipe"],
     featured: false,
+    badge: "Melhor custo por dispositivo",
     cta: "Quero acelerar minhas vendas",
     checkoutUrl: "https://pay.hotmart.com/M99698697O?off=fwpm7bs0&checkoutMode=6",
   },
@@ -79,16 +82,17 @@ export default function Pricing() {
           className="qi-pricing-grid"
         >
           {plans.map((plan, index) => (
-            <div key={plan.name} style={{ position: "relative", paddingTop: plan.featured ? 28 : 0 }}>
-              {plan.featured && (
+            <div key={plan.name} style={{ position: "relative", paddingTop: plan.badge ? 28 : 0 }}>
+              {plan.badge && (
                 <div
                   style={{
                     position: "absolute",
                     top: 0,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: "#1DB954",
-                    color: "#000",
+                    background: plan.featured ? "#1DB954" : "#161E19",
+                    color: plan.featured ? "#000" : "rgba(255,255,255,0.75)",
+                    border: plan.featured ? "none" : "1px solid rgba(255,255,255,0.15)",
                     fontSize: 12,
                     fontWeight: 700,
                     padding: "5px 14px",
@@ -98,7 +102,7 @@ export default function Pricing() {
                     zIndex: 1,
                   }}
                 >
-                  Mais escolhido
+                  {plan.badge}
                 </div>
               )}
               <HoverCard

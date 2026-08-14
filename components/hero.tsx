@@ -36,10 +36,10 @@ export default function Hero() {
             <Image
               src="/qindica-logo-white.png"
               alt="Q-Indica"
-              width={200}
-              height={58}
+              width={216}
+              height={60}
               priority
-              style={{ height: 50, width: "auto" }}
+              style={{ height: 58, width: "auto" }}
             />
           </a>
           <ActionLink
@@ -135,7 +135,7 @@ export default function Hero() {
                 fontFamily: "var(--font-sora), sans-serif",
               }}
             >
-              Atenda com mais segurança e nunca mais trave na hora de{" "}
+              Não trave na hora de{" "}
               <span
                 style={{
                   color: "#1DB954",
@@ -145,7 +145,8 @@ export default function Hero() {
                 }}
               >
                 indicar.
-              </span>
+              </span>{" "}
+              O Q-Indica mostra o que oferecer junto.
             </h1>
 
             {/* Pain points */}

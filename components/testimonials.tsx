@@ -51,7 +51,7 @@ export default function Testimonials() {
             lineHeight: 1.15,
           }}
         >
-          O que farmacêuticos{" "}
+          O que clientes{" "}
           <span style={{ color: "#1DB954" }}>dizem sobre o Q-Indica</span>
         </h2>
 
